@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "title": "Maple Grove Garden House",
+    "location": "New York, USA",
+    "price": 680,
+    "period": "week",
+    "beds": 4,
+    "baths": 4,
+    "area": "2500sft",
+    "type": "Villa",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c",
+      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1"
+    ],
+    "amenities": ["Private Pool", "Garden", "Pet-friendly"]
+  },
+  {
+    "id": 2,
+    "title": "Sunset Towers Eklosbet",
+    "location": "New York, USA",
+    "price": 340,
+    "period": "week",
+    "beds": 7,
+    "baths": 4,
+    "area": "6500sft",
+    "type": "Apartment",
+    "isFavorite": true,
+    "mainImage": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    "images": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83"
+    ],
+    "amenities": ["Parking", "Gym", "Concierge"]
+  },
+  {
+    "id": 3,
+    "title": "Riverside Retreat",
+    "location": "New York, USA",
+    "price": 280,
+    "period": "week",
+    "beds": 4,
+    "baths": 3,
+    "area": "3500sft",
+    "type": "House",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+    "images": [
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+      "https://images.unsplash.com/photo-1600596542815-225065c7285b",
+      "https://images.unsplash.com/photo-1599809275661-059052d90e0d"
+    ],
+    "amenities": ["River View", "Boathouse", "Pet-friendly"]
+  },
+  {
+    "id": 4,
+    "title": "Golden Meadows",
+    "location": "New York, USA",
+    "price": 280,
+    "period": "week",
+    "beds": 6,
+    "baths": 4,
+    "area": "4500sft",
+    "type": "Acreage",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+    "images": [
+      "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c"
+    ],
+    "amenities": ["Large Yard", "Garage", "Fireplace"]
+  },
+  {
+    "id": 5,
+    "title": "The Urban Nest Lofts",
+    "location": "Brooklyn, NY",
+    "price": 450,
+    "period": "week",
+    "beds": 2,
+    "baths": 2,
+    "area": "1200sft",
+    "type": "Town House",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c",
+      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1"
+    ],
+    "amenities": ["Rooftop Access", "Smart Home"]
+  },
+  {
+    "id": 6,
+    "title": "Seaside Serenity Villa",
+    "location": "Long Island, NY",
+    "price": 600,
+    "period": "week",
+    "beds": 5,
+    "baths": 5,
+    "area": "5000sft",
+    "type": "Villa",
+    "isFavorite": true,
+    "mainImage": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    "images": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83"
+    ],
+    "amenities": ["Ocean View", "Private Pool", "Beach Access"]
+  },
+  {
+    "id": 7,
+    "title": "Modernist Glass Home",
+    "location": "Upstate New York",
+    "price": 320,
+    "period": "week",
+    "beds": 3,
+    "baths": 2,
+    "area": "2800sft",
+    "type": "House",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+    "images": [
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+      "https://images.unsplash.com/photo-1600596542815-225065c7285b",
+      "https://images.unsplash.com/photo-1599809275661-059052d90e0d"
+    ],
+    "amenities": ["Forest View", "Minimalist Design"]
+  },
+  {
+    "id": 8,
+    "title": "Heritage Brownstone",
+    "location": "Manhattan, NY",
+    "price": 550,
+    "period": "week",
+    "beds": 4,
+    "baths": 3,
+    "area": "3100sft",
+    "type": "Town House",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+    "images": [
+      "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c"
+    ],
+    "amenities": ["Historic", "Garden", "Fireplace"]
+  },
+  {
+    "id": 9,
+    "title": "Skyline Penthouse",
+    "location": "New York, USA",
+    "price": 890,
+    "period": "week",
+    "beds": 3,
+    "baths": 3,
+    "area": "2200sft",
+    "type": "Apartment",
+    "isFavorite": true,
+    "mainImage": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c",
+      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1"
+    ],
+    "amenities": ["City View", "Doorman", "Luxury"]
+  },
+  {
+    "id": 10,
+    "title": "Cozy Creek Cottage",
+    "location": "Catskills, NY",
+    "price": 180,
+    "period": "week",
+    "beds": 2,
+    "baths": 1,
+    "area": "1100sft",
+    "type": "House",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    "images": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83"
+    ],
+    "amenities": ["Fire Pit", "Nature Trails", "Pet-friendly"]
+  },
+  {
+    "id": 11,
+    "title": "The Grand Estate",
+    "location": "Hamptons, NY",
+    "price": 1200,
+    "period": "week",
+    "beds": 8,
+    "baths": 6,
+    "area": "8000sft",
+    "type": "Acreage",
+    "isFavorite": true,
+    "mainImage": "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+    "images": [
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+      "https://images.unsplash.com/photo-1600596542815-225065c7285b",
+      "https://images.unsplash.com/photo-1599809275661-059052d90e0d"
+    ],
+    "amenities": ["Tennis Court", "Guest House", "Pool"]
+  },
+  {
+    "id": 12,
+    "title": "Downtown Industrial Loft",
+    "location": "SoHo, NY",
+    "price": 400,
+    "period": "week",
+    "beds": 1,
+    "baths": 1,
+    "area": "1500sft",
+    "type": "Apartment",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+    "images": [
+      "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c"
+    ],
+    "amenities": ["High Ceilings", "Exposed Brick"]
+  },
+  {
+    "id": 13,
+    "title": "Suburban Family Dream",
+    "location": "Queens, NY",
+    "price": 250,
+    "period": "week",
+    "beds": 4,
+    "baths": 2,
+    "area": "2000sft",
+    "type": "House",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c",
+      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1"
+    ],
+    "amenities": ["School District", "Backyard", "Garage"]
+  },
+  {
+    "id": 14,
+    "title": "Minimalist Studio",
+    "location": "Manhattan, NY",
+    "price": 220,
+    "period": "week",
+    "beds": 1,
+    "baths": 1,
+    "area": "600sft",
+    "type": "Apartment",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    "images": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83"
+    ],
+    "amenities": ["Central Location", "Modern Kitchen"]
+  },
+  {
+    "id": 15,
+    "title": "Hilltop Mansion",
+    "location": "Westchester, NY",
+    "price": 750,
+    "period": "week",
+    "beds": 6,
+    "baths": 5,
+    "area": "5500sft",
+    "type": "Villa",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+    "images": [
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+      "https://images.unsplash.com/photo-1600596542815-225065c7285b",
+      "https://images.unsplash.com/photo-1599809275661-059052d90e0d"
+    ],
+    "amenities": ["Panoramic View", "Wine Cellar"]
+  },
+  {
+    "id": 16,
+    "title": "The Garden Duplex",
+    "location": "Brooklyn, NY",
+    "price": 310,
+    "period": "week",
+    "beds": 3,
+    "baths": 2,
+    "area": "1800sft",
+    "type": "Town House",
+    "isFavorite": true,
+    "mainImage": "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+    "images": [
+      "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c"
+    ],
+    "amenities": ["Private Garden", "Quiet Street"]
+  },
+  {
+    "id": 17,
+    "title": "Lakeview Cabin",
+    "location": "Adirondacks, NY",
+    "price": 200,
+    "period": "week",
+    "beds": 3,
+    "baths": 2,
+    "area": "1600sft",
+    "type": "Land",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "images": [
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c",
+      "https://images.unsplash.com/photo-1558036117-15d82a90b9b1"
+    ],
+    "amenities": ["Lake Access", "Fishing", "Hiking"]
+  },
+  {
+    "id": 18,
+    "title": "Luxury High-Rise",
+    "location": "New York, USA",
+    "price": 500,
+    "period": "week",
+    "beds": 2,
+    "baths": 2,
+    "area": "1400sft",
+    "type": "Apartment",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+    "images": [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1572120360610-d971b9d7767c",
+      "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6",
+      "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83"
+    ],
+    "amenities": ["Pool", "Valet", "Spa"]
+  },
+  {
+    "id": 19,
+    "title": "Open Acreage Plot",
+    "location": "Upstate New York",
+    "price": 150,
+    "period": "week",
+    "beds": 0,
+    "baths": 0,
+    "area": "10 Acres",
+    "type": "Land",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+    "images": [
+      "https://images.unsplash.com/photo-1576941089067-2de3c901e126",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
+      "https://images.unsplash.com/photo-1518780664697-55e3ad937233",
+      "https://images.unsplash.com/photo-1600596542815-225065c7285b",
+      "https://images.unsplash.com/photo-1599809275661-059052d90e0d"
+    ],
+    "amenities": ["Development Potential", "Camping"]
+  },
+  {
+    "id": 20,
+    "title": "Contemporary Villa",
+    "location": "Staten Island, NY",
+    "price": 380,
+    "period": "week",
+    "beds": 5,
+    "baths": 3,
+    "area": "3200sft",
+    "type": "Villa",
+    "isFavorite": false,
+    "mainImage": "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+    "images": [
+      "https://images.unsplash.com/photo-1592595896551-12b371d546d5",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6",
+      "https://images.unsplash.com/photo-1598228723793-52759bba239c"
+    ],
+    "amenities": ["Modern Art", "Smart Lighting"]
+  }
+]
