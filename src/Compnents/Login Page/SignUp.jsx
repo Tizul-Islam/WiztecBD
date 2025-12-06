@@ -232,32 +232,43 @@ const SignUp = () => {
             </div>
           </form>
           {/* Footer */}
-          
+
         </div>
       </div>
 
       {/* RIGHT SECTION - IMAGE */}
       {/* Hidden on mobile, Flex on lg screens */}
       <div className="hidden lg:flex lg:w-1/2 p-4 h-screen sticky top-0">
-        <div className="relative w-full h-full rounded-[40px] overflow-hidden">
-          {/* Background Image */}
+        <div className="relative w-full h-full rounded-l-[4rem] rounded-r-[4rem] overflow-hidden">
+
+          {/* 1. Define the Custom Shape SVG */}
+          <svg className="absolute w-0 h-0">
+            <defs>
+
+              <clipPath id="myRoundedShape" clipPathUnits="objectBoundingBox">
+                <path d="
+        M 0.15 0 
+        Q 0.15 0.08 0.075 0.075 
+        T 0 0.15 
+        L 0 1 
+        L 0.85 1 
+        Q 0.85 0.92 0.925 0.925 
+        T 1 0.85 
+        L 1 0 
+        Z
+      " />
+              </clipPath>
+            </defs>
+          </svg>
+
+          {/* 2. Apply the Shape to the Image */}
           <img
             src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
             alt="City Skyline"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-full object-cover"
+            style={{ clipPath: "url(#myRoundedShape)" }}
           />
 
-          {/* Dark Overlay gradient for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/10"></div>
-
-          {/* Text Overlay */}
-          <div className="absolute top-12 right-12 max-w-sm text-right">
-            <h2 className="text-white text-2xl font-medium leading-tight drop-shadow-md">
-              Browse thousands of properties to buy, sell, or rent with trusted agents.
-            </h2>
-          </div>
-
-       
         </div>
       </div>
 

@@ -474,9 +474,8 @@ const PropertyCard = ({ property, onToggleFavorite, onClick }) => {
             </div>
         </div>
     );
-};
-
-// --- Sort Dropdown Component (uses props; closes on outside click) ---
+}
+// Sort Dropdown Component (uses props; closes on outside click)
 function SortDropdown({ sortBy, setSortBy }) {
     const [isOpen, setIsOpen] = useState(false);
     const ref = useRef(null);
@@ -563,16 +562,16 @@ const PropertyPage = () => {
     // Filter + Sort Logic
     const filteredProperties = useMemo(() => {
         const result = properties.filter(p => {
-            // 1. Price Check
+          
             if (p.price < filters.minPrice || p.price > filters.maxPrice) return false;
 
-            // 2. Type Check (if any selected)
+          
             if (filters.types.length > 0 && !filters.types.includes(p.type)) return false;
 
-            // 3. Suburb Check (if any selected)
+          
             if (filters.suburbs.length > 0 && !filters.suburbs.includes(p.location)) return false;
 
-            // 4. Amenity Check (if any selected, property must have ALL of them)
+          
             if (filters.amenities.length > 0) {
                 const hasAmenity = filters.amenities.every(filterTag =>
                     p.amenities.some(propTag => propTag.includes(filterTag) || filterTag.includes(propTag))
@@ -604,7 +603,7 @@ const PropertyPage = () => {
     const totalPages = Math.max(1, Math.ceil(totalItems / itemsPerPage));
 
     useEffect(() => {
-        // If filters change and currentPage is out of range, reset/clamp it
+       
         setCurrentPage((prev) => {
             if (prev > totalPages) return 1;
             if (prev < 1) return 1;
@@ -616,16 +615,16 @@ const PropertyPage = () => {
     const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
     const paginatedProperties = filteredProperties.slice(startIndex, endIndex);
 
-    // Helper: return condensed list of page numbers and ellipses
+    
     const getVisiblePages = (total, current, maxButtons = 5) => {
         if (total <= maxButtons) return Array.from({ length: total }, (_, i) => i + 1);
 
         const pages = [];
-        const side = Math.floor((maxButtons - 3) / 2); // pages on each side of current when showing first & last
+        const side = Math.floor((maxButtons - 3) / 2); 
         let left = Math.max(2, current - side);
         let right = Math.min(total - 1, current + side);
 
-        // adjust when close to edges
+       
         if (current - 1 <= side) {
             left = 2;
             right = Math.max(2, maxButtons - 2);
@@ -643,7 +642,7 @@ const PropertyPage = () => {
         return pages;
     };
 
-    // (No global/window event wiring needed — SortDropdown is now prop-driven)
+  
     const resetFilters = () => {
         setFilters({
             minPrice: 0,
@@ -655,104 +654,108 @@ const PropertyPage = () => {
     };
 
     return (
-        <div className="min-h-screen bg-[#fafbfc] font-sans text-gray-900">
-            <div className="max-w-[1440px] mx-auto px-4 py-8 lg:px-8">
+       <div className="min-h-screen bg-[#fafbfc] font-sans text-gray-900">
+    <div className="max-w-[1440px] mx-auto px-4 py-8 lg:px-8">
 
-                {/* Main Layout: Flex Container */}
-                <div className="flex flex-col lg:flex-row gap-8 items-start">
+        {/* Main Layout: Flex Container */}
+        <div className="flex flex-col lg:flex-row gap-8 items-start">
 
-                    {/* Left: Sidebar */}
-                    <Sidebar
-                        filters={filters}
-                        setFilters={setFilters}
-                        onReset={resetFilters}
-                    />
+            {/* Left: Sidebar */}
+            <Sidebar
+                filters={filters}
+                setFilters={setFilters}
+                onReset={resetFilters}
+                className="w-full sm:w-64 lg:w-80 flex-shrink-0 bg-white p-6 rounded-2xl shadow-sm border border-gray-100 h-fit overflow-y-auto"
+            />
 
-                    {/* Right: Grid Content */}
-                    <div className="flex-1 w-full">
+            {/* Right: Grid Content */}
+            <div className="flex-1 w-full">
 
-                        {/* Top Header */}
-                        <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row justify-between items-center mb-6">
-                            <div className="flex items-center gap-2 mb-2 sm:mb-0">
-                                <h1 className="text-xl font-bold text-gray-900">Property</h1>
-                                <span className="text-gray-400 text-sm font-medium">--- Showing result- ({filteredProperties.length})</span>
-                            </div>
-
-                            <SortDropdown sortBy={sortBy} setSortBy={setSortBy} />
-                        </div>
-
-                        {/* Grid */}
-                        {totalItems > 0 ? (
-                            <>
-                                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
-                                    {paginatedProperties.map((item) => (
-                                        <PropertyCard
-                                            key={item.id}
-                                            property={item}
-                                            onToggleFavorite={toggleFavorite}
-                                            onClick={() => openModal(item)}
-                                        />
-                                    ))}
-                                </div>
-
-                                {/* Pagination Controls */}
-                                <div className="flex items-center justify-between mt-6">
-                                    {/* Page numbers (left) */}
-                                    <div className="join">
-                                        {getVisiblePages(totalPages, currentPage, 5).map((page, idx) => {
-                                            if (page === 'left-ellipsis' || page === 'right-ellipsis') {
-                                                return (
-                                                    <button key={`e-${idx}`} className="join-item btn btn-ghost cursor-default" disabled>
-                                                        ...
-                                                    </button>
-                                                );
-                                            }
-
-                                            return (
-                                                <button
-                                                    key={page}
-                                                    onClick={() => setCurrentPage(page)}
-                                                    className={`join-item btn ${currentPage === page ? 'btn-active' : ''}`}
-                                                >{page}</button>
-                                            );
-                                        })}
-                                    </div>
-
-                                    {/* Summary */}
-                                    <div className="text-sm text-gray-600">
-                                        Showing <span className="font-semibold">{startIndex + 1}</span> - <span className="font-semibold">{endIndex}</span> of <span className="font-semibold">{totalItems}</span>
-                                    </div>
-
-                                    {/* Prev/Next (right) */}
-                                    <div className="join grid grid-cols-2">
-                                        <button
-                                            onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
-                                            className="join-item btn btn-outline"
-                                            disabled={currentPage === 1}
-                                        >Previous</button>
-                                        <button
-                                            onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
-                                            className="join-item btn btn-outline"
-                                            disabled={currentPage === totalPages}
-                                        >Next</button>
-                                    </div>
-                                </div>
-                            </>
-                        ) : (
-                            <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-300">
-                                <p className="text-gray-500 text-lg">No properties match your filters.</p>
-                                <button onClick={resetFilters} className="mt-4 text-[#701a52] font-bold underline">Clear Filters</button>
-                            </div>
-                        )}
-
+                {/* Top Header */}
+                <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col sm:flex-row sm:flex-wrap justify-between items-center mb-6">
+                    <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-2 sm:mb-0">
+                        <h1 className="text-xl font-bold text-gray-900">Property</h1>
+                        <span className="text-gray-400 text-sm font-medium">
+                            --- Showing result- ({filteredProperties.length})
+                        </span>
                     </div>
 
+                    <SortDropdown sortBy={sortBy} setSortBy={setSortBy} />
                 </div>
+
+                {/* Grid */}
+                {totalItems > 0 ? (
+                    <>
+                        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
+                            {paginatedProperties.map((item) => (
+                                <PropertyCard
+                                    key={item.id}
+                                    property={item}
+                                    onToggleFavorite={toggleFavorite}
+                                    onClick={() => openModal(item)}
+                                />
+                            ))}
+                        </div>
+
+                        {/* Pagination Controls */}
+                        <div className="flex flex-wrap items-center justify-between mt-6 gap-2">
+                            {/* Page numbers (left) */}
+                            <div className="join">
+                                {getVisiblePages(totalPages, currentPage, 5).map((page, idx) => {
+                                    if (page === 'left-ellipsis' || page === 'right-ellipsis') {
+                                        return (
+                                            <button key={`e-${idx}`} className="join-item btn btn-ghost cursor-default" disabled>
+                                                ...
+                                            </button>
+                                        );
+                                    }
+
+                                    return (
+                                        <button
+                                            key={page}
+                                            onClick={() => setCurrentPage(page)}
+                                            className={`join-item btn ${currentPage === page ? 'btn-active' : ''}`}
+                                        >{page}</button>
+                                    );
+                                })}
+                            </div>
+
+                            {/* Summary */}
+                            <div className="text-sm text-gray-600">
+                                Showing <span className="font-semibold">{startIndex + 1}</span> - <span className="font-semibold">{endIndex}</span> of <span className="font-semibold">{totalItems}</span>
+                            </div>
+
+                            {/* Prev/Next (right) */}
+                            <div className="join grid grid-cols-2 gap-2 sm:gap-0">
+                                <button
+                                    onClick={() => setCurrentPage(p => Math.max(1, p - 1))}
+                                    className="join-item btn btn-outline"
+                                    disabled={currentPage === 1}
+                                >Previous</button>
+                                <button
+                                    onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))}
+                                    className="join-item btn btn-outline"
+                                    disabled={currentPage === totalPages}
+                                >Next</button>
+                            </div>
+                        </div>
+                    </>
+                ) : (
+                    <div className="text-center py-20 bg-white rounded-2xl border border-dashed border-gray-300">
+                        <p className="text-gray-500 text-lg">No properties match your filters.</p>
+                        <button onClick={resetFilters} className="mt-4 text-[#701a52] font-bold underline">Clear Filters</button>
+                    </div>
+                )}
+
             </div>
-            {isModalOpen && (
-                <Modal property={selectedProperty} onClose={closeModal} />
-            )}
+
         </div>
+    </div>
+    {isModalOpen && (
+        <Modal property={selectedProperty} onClose={closeModal} />
+    )}
+</div>
+
     );
 };
 

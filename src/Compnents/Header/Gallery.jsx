@@ -3,9 +3,9 @@ import { Bed, Bath, Move, Heart } from 'lucide-react';
 import { PropertyContext } from '../../context/PropertyContext';
 import Modal from '../Modal';
 
-// 2. The Single Card Component
+
 const PropertyCard = ({ property, toggleFavorite, onClick }) => {
-  // Helper to format numbers with leading zero (e.g., 4 -> 04) to match design
+ 
   const formatCount = (num) => num < 10 ? `0${num}` : num;
 
   return (
@@ -19,7 +19,7 @@ const PropertyCard = ({ property, toggleFavorite, onClick }) => {
           alt={property.title} 
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
         />
-        {/* Favorite Button (Optional, as seen in some designs) */}
+        {/* Favorite Button */}
         <button onClick={(e) => { e.stopPropagation(); toggleFavorite(property.id); }} className="absolute top-4 right-4 p-2 bg-white/20 backdrop-blur-md rounded-full hover:bg-white transition-colors">
              <Heart size={20} className={property.isFavorite ? "fill-red-500 text-red-500" : "text-white"} />
         </button>

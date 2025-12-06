@@ -30,12 +30,12 @@ const MetricCard = ({ colors, label, value, description }) => {
 const HeroSection = () => {
 
   const colors = {
-    bgDark: '#1E0A18',      // The main deep purple/brown background
-    bgCard: '#2A1221',      // Slightly lighter background for cards
-    accentPink: '#E93D82',  // The pink used for the button
-    bgBanner: '#F5E6C8',    // The beige banner background
-    textBanner: '#4A3B32',  // The dark brown text in the banner
-    textGray: '#A3989F'     // Lighter text for labels
+    bgDark: '#1E0A18',      
+    bgCard: '#2A1221',      
+    accentPink: '#E93D82',  
+    bgBanner: '#F5E6C8',    
+    textBanner: '#4A3B32',  
+    textGray: '#A3989F'     
   };
 
   return (
@@ -91,7 +91,7 @@ const HeroSection = () => {
         </div>
 
         {/* --- The Stats Card --- */}
-        <div className="w-full flex justify-center"> {/* Removed min-h-screen/bg-black wrapper for cleaner integration */}
+        <div className="w-full flex justify-center"> 
           <div
             className="w-full max-w-6xl rounded-[32px] overflow-hidden relative shadow-2xl border border-white/5"
             style={{ backgroundColor: '#290423' }}
