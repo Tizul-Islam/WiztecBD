@@ -140,7 +140,7 @@ const LoginPage = () => {
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="block text-xs font-medium text-gray-600 mb-1 ml-1">Email</label>
-              <input type="email" name="email" defaultValue="rownok@gmail.com"
+              <input type="email" name="email" defaultValue="wiztecbd@gmail.com"
                 className="w-full bg-gray-50 border-none rounded-xl px-4 py-3.5 text-sm focus:ring-2 focus:ring-[#6b0f44]/20 focus:outline-none transition-all"
                 placeholder="Enter your email" />
             </div>

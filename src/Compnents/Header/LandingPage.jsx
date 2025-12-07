@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image from "./../../../public/img/img1.png"
+import image from "./../../img/img1.png"
 import {
   BookOpen,
   Users,
