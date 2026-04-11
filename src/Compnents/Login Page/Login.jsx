@@ -100,7 +100,9 @@ const LoginPage = () => {
             <div className="bg-[#6b0f44] p-1.5 rounded-md text-white">
               <Home size={20} fill="currentColor" />
             </div>
-            <span className="text-2xl font-bold text-[#6b0f44]">WiztecBD</span>
+            <Link to="/">
+              <span className="text-2xl font-bold text-[#6b0f44]">WiztecBD</span>
+            </Link>
           </div>
 
           {/* Header */}

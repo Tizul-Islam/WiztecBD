@@ -30,12 +30,12 @@ const MetricCard = ({ colors, label, value, description }) => {
 const HeroSection = () => {
 
   const colors = {
-    bgDark: '#1E0A18',      
-    bgCard: '#2A1221',      
-    accentPink: '#E93D82',  
-    bgBanner: '#F5E6C8',    
-    textBanner: '#4A3B32',  
-    textGray: '#A3989F'     
+    bgDark: '#1E0A18',
+    bgCard: '#2A1221',
+    accentPink: '#E93D82',
+    bgBanner: '#F5E6C8',
+    textBanner: '#4A3B32',
+    textGray: '#A3989F'
   };
 
   return (
@@ -91,7 +91,7 @@ const HeroSection = () => {
         </div>
 
         {/* --- The Stats Card --- */}
-        <div className="w-full flex justify-center"> 
+        <div className="w-full flex justify-center">
           <div
             className="w-full max-w-6xl rounded-[32px] overflow-hidden relative shadow-2xl border border-white/5"
             style={{ backgroundColor: '#290423' }}
@@ -153,9 +153,19 @@ const HeroSection = () => {
                 className="p-3 text-center text-sm md:text-lg font-medium leading-relaxed flex items-center justify-center "
                 style={{ backgroundColor: colors.bgBanner, color: colors.textBanner }}
               >
-                <p className='w-full'>
-                  Unlike Kajabi, Teachable, or Skool, Growhubs helps you find and convert clients inside the platform so you can sell from day one.
-                </p>
+
+
+
+                <div className="custom-marquee-container">
+                  <div className="custom-marquee">
+                    <p className="inline-block mx-4">
+                      Unlike Kajabi, Teachable, or Skool, Growhubs helps you find and convert clients inside the platform so you can sell from day one.
+                    </p>
+                    <p className="inline-block mx-4">
+                      Unlike Kajabi, Teachable, or Skool, Growhubs helps you find and convert clients inside the platform so you can sell from day one.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 

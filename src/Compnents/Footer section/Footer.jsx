@@ -70,8 +70,8 @@ const Footer = () => {
             className="font-bold bg-gradient-to-b from-[#5c415c] to-[#cac3c3] bg-clip-text text-transparent whitespace-nowrap leading-none text-center"
             style={{
                 // Scales smoothly from mobile to desktop
-                fontSize: '18vw', 
-                marginBottom: '-0.2em' 
+                fontSize: '15vw', 
+                
             }}
         >
             WiztecBD

@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white shadow-sm sticky top-0 z-50">
-      <div className="px-6 py-3 flex items-center justify-between">
+      <div className="max-w-[1440px] mx-auto px-6 py-3 flex items-center justify-between">
         
         {/* Left - Logo */}
         <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-2 cursor-pointer">
