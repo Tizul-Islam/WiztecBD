@@ -16,7 +16,7 @@ const LandingPage = () => {
   const [activeTab, setActiveTab] = useState('Courses');
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#fff5f5] to-[#cca5a5] font-sans text-slate-900 selection:bg-pink-200 overflow-x-hidden relative">
+    <div className="bg-gradient-to-b from-[#fff5f5] to-[#cca5a5] font-sans text-slate-900 selection:bg-pink-200 overflow-x-hidden relative">
 
       {/* CUSTOM STYLES FOR ANIMATION
       */}

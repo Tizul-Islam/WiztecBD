@@ -153,7 +153,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="py-12 md:py-20 px-4 md:px-8 font-sans overflow-hidden min-h-screen flex flex-col justify-center relative bg-[#2E0820]">
+    <section className="py-12 md:py-20 px-4 md:px-8 font-sans overflow-hidden flex flex-col justify-center relative bg-[#2E0820]">
       
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#2E0820] to-[rgba(90,100,113,0.99)] pointer-events-none"></div>
 

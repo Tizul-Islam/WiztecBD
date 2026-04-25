@@ -39,7 +39,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#2A0019] text-white relative overflow-hidden font-sans selection:bg-purple-500 selection:text-white">
+    <div className="bg-[#2A0019] text-white relative overflow-hidden font-sans selection:bg-purple-500 selection:text-white">
 
       {/* --- Background Ambient Glow Effects --- */}
       <div className="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-purple-900/40 rounded-full blur-[120px] opacity-70 pointer-events-none" />
